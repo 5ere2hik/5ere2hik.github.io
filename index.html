@@ -44,19 +44,30 @@
         <h1>Move. Rest. Recover. Move.</h1>
       </div>
     </div> -->
+	
+	<ul id="menu">
+    <li data-menuanchor="home" class="active"><a href="#home">Ремонт одежды</a></li>
+    <li data-menuanchor="service"><a href="#service">Услуги</a></li>
+    <li data-menuanchor="contacts"><a href="#contacts">Контакты</a></li>
+	</ul>
+	
+	
     <div id="fullpage">
-    <div class="section home">Some section</div>
-    <div class="section service">Some section
+    <div class="section home-page" data-anchors="home">Some section</div>
+    <div class="section service-page"  data-anchors="service">Some section
 		<div class="slide"> Slide 1 </div>
 		<div class="slide"> Slide 2 </div>
 		<div class="slide"> Slide 3 </div>
 	</div>
-    <div class="section contacts">Some section</div>
+    <div class="section contacts-page"  data-anchors="contacts">Some section</div>
     </div>
 	
 	<script>
 		$(document).ready(function() {
-		$('#fullpage').fullpage();
+		$('#fullpage').fullpage({
+			anchors:['home', 'service', 'contacts'],
+			menu: '#menu'
+		});
 		});
 	</script>
 	

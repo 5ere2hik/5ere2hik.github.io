@@ -51,7 +51,7 @@ abbr,acronym { border: 0;
 	margin: 10px;
 	color: #000;
 	background:#fff;
-	background: rgba(255,255,255, 0.5);
+	background: rgba(255,255,255, 0.7);
 	-webkit-border-radius: 10px;
 			border-radius: 10px;
 }
@@ -91,7 +91,7 @@ abbr,acronym { border: 0;
 
 
 .home-page{
-display: block;
+
 	/* background-color: red; */
 	background: url("../resourses/bg.jpg") no-repeat center center;
   /*background-color:	green;*/
@@ -101,9 +101,15 @@ display: block;
 	padding: 0;
 	vertical-align: top;
 	height: 100%;
-	border: 3px solid black;
+	/* border: 3px solid black; */
 }
-
+.wrapper{
+height: 100%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
 
 .service-page{
 	/* background-color: red; */
@@ -112,33 +118,73 @@ display: block;
  
   background-size: cover;
 }
-.container{
-	margin: 0;
-	padding: 0;
-	position: relative;
-	top:0;
-}
 
+
+.container{
+	display:flex; 
+	flex-direction: column;
+	margin: 0 auto;
+	min-height: 70%;
+	width: 90%;
+	/* display: flex; */
+	background: rgba(255,255,255, 0.7);
+	-webkit-border-radius: 10px;
+			border-radius: 10px;
+	/* height: auto; */
+	/* max-height: 500px; */
+	
+}
 .name{
-	position: relative;
-	top: 0;
+
+	
+	/* position: relative;
+	top: 0; */
 	text-align: center;
 	font-size: 5em;
 	font-weight: bold;
-	border: 1px solid black;
-	margin: 0;
-	padding: 0;
+	/* border: 1px solid black; */
+	/* margin-top: 1.7em; */
+	padding: 0.5em 0;
+	color:#444;
+}
+
+.description .text, .description .image{
+/* 	border: 1px solid black;
+	display: inline-block;
+	position: relative;
+	width: 45%;
+	max-width: 300px;
+	margin: 0 5%;
+	padding: 10px;
+	text-align: justify; */
+	
 }
 
 .description{
-	border: 1px solid black;
-	display: inline-block;
-	width: 35%;
-	margin: 0 30px;
+	display: flex;
+}
+
+
+.description .image{
+		margin-left: 6%;
+		width: 300px;
+}
+
+.image img{
+	height: 200px;
+	
+}
+
+.description .image{
+display: inline-block;
+position: relative;
+	right: 0;
+	width: 45%;
+	
 }
 
 .description h1{
-
+	margin-bottom: 0.5em;
 	font-size: 30px;
 }
 

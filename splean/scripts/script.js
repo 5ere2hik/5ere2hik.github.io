@@ -1,3 +1,5 @@
+"use strict";
+
 var pageIsSmall;
 
 if(window.innerWidth <= 991)

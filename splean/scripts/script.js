@@ -1,9 +1,45 @@
 "use strict";
 $(document).ready(function(){
   
-  if(window.innerWidth <= 991){
-    $(".cover").appendTo("#first-row");
+  $(".debug-well").hide();
+  
+  var $covers = $(".cover");
+  var $smallCovers;
+  var pageIsSmall = (window.innerWidth <= 991)? true : false;
+  
+  if(pageIsSmall){
+    $covers.clone().appendTo("#first-row");
+    $covers.hide();
+  }
+  
+  // $(".debug-well").html("innerWidth: " + window.innerWidth + "\n clientWidth: " + document.documentElement.clientWidth);
+  
+  
+  $(window).resize(function(){
+    // $(".debug-well").html("innerWidth: " + window.innerWidth + "\n clientWidth: " + document.documentElement.clientWidth);
+    
+    if(window.innerWidth <= 991){
+      if(!pageIsSmall){
+        pageIsSmall = true;
+        
+        $smallCovers = $covers.clone();
+        $smallCovers.appendTo("#first-row").addClass(".smallCover").removeClass("cover");
+        $covers.hide();
+      }
+    } else {
+      if(pageIsSmall){
+        pageIsSmall = false;
+        $(".smallCover").remove();
+        $(".cover").show();
+        
+        
+      }
     }
+    
+    
+  });
+    
+  
 });
 // else
   // pageIsSmall = false;

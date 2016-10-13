@@ -1,17 +1,14 @@
-.container{
-	margin-top: 15px;
+html {
+    background: url('../resources/back.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
 }
 
-.debug-well{
-  position: fixed;
-  width: auto;
-  height: 100px;
-  top: 20px;
-  left: 20px;
-  z-index: 100;
+body{
+  background-color: rgba(255, 255, 255, 0);
 }
-
-
 
 h1{
 	font-family: 'Russo One', sans-serif;
@@ -28,16 +25,23 @@ p{
 	font-size: 1.2em;
 	text-align: justify;
 }
+blockquote {
+	font-size: 1em;
+}
 
 .caption p{
 	margin-bottom: 0;
 	font-size: 1.4em;
 }
-blockquote {
-	font-size: 1em;
+
+.container{
+	margin-top: 15px;
 }
 
+.well{
+  background-color: rgba(245, 245, 245, 0.8);
 
+}
 @media screen and (max-width: 991px){
 	h1{
 		font-size: 6em;

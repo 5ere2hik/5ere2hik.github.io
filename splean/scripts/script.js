@@ -1,4 +1,5 @@
 "use strict";
+/*
 $(document).ready(function(){
     
   var $covers = $(".cover");
@@ -27,4 +28,4 @@ $(document).ready(function(){
     }
   });
 });
-
+*/

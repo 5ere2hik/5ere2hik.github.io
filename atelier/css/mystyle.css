@@ -1,0 +1,32 @@
+body {
+  /*min-height: 2000px;*/
+  padding-top: 50px;
+}
+
+.container-fluid{
+  padding: 0;
+}
+
+.navbar{
+  margin-bottom: 0;
+  border: none;
+}
+
+.jumbotron{
+  margin-bottom: 0;
+
+}
+.container-fluid .jumbotron{
+  border-radius: 0;
+}
+
+.navbar-brand{
+  padding: 2px 15px;
+}
+.navbar-brand img{
+  width: 46px;
+}
+
+#mapid{
+  height: 300px;
+}

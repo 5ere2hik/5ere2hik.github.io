@@ -38,7 +38,7 @@ nav #navbar, nav .navbar-header {
   height: 50px;
   padding: 5px 0;
   /*margin-right: 15px;*/
-  background-color: var(--text-color-1);
+  /*background-color: var(--text-color-1);*/
 
 }
 

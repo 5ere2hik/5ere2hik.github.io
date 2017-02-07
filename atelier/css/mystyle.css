@@ -1,31 +1,172 @@
-body {
-  /*min-height: 2000px;*/
-  padding-top: 50px;
+:root {
+  --bg-color: rgba(122, 177, 206, 0.8);
+  --text-color-1: rgba( 98,  53, 104, 1);   
+  --text-color-2: rgba(106, 120,   8, 1);  
 }
 
-.container-fluid{
-  padding: 0;
+
+
+html, body{
+  height: 100%;
+  width: 100%;
+  min-width: 350px;
 }
 
-.navbar{
+
+.navbar {
+  background-color: var(--bg-color);
+  border: none;
+    min-width: 350px;
+}
+
+nav .navbar{
   margin-bottom: 0;
   border: none;
 }
 
-.jumbotron{
-  margin-bottom: 0;
-
-}
-.container-fluid .jumbotron{
-  border-radius: 0;
+nav #navbar, nav .navbar-header {
+  /*background-color: var(--bg-color);*/
 }
 
 .navbar-brand{
-  padding: 2px 15px;
+  padding: 0 15px;
 }
-.navbar-brand img{
-  width: 46px;
+
+.phones{
+  float: left;
+  width: auto ;
+  height: 50px;
+  padding: 5px 0;
+  /*margin-right: 15px;*/
+  background-color: var(--text-color-1);
+
 }
+
+.phones ul{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+
+}
+
+.phones a{
+  color: #333;
+}
+.phones a:hover{
+  color : #777;
+  text-decoration: none;
+}
+
+.phones img{
+  display: inline-block; 
+  position: relative;
+  right: 0;
+  top: -1px;
+  margin-left: 5px;
+  height: 15px;
+}
+
+
+@media screen and (max-width: 768px) {
+  .phones{
+    /*display: inline-block;*/
+    float: left;
+    height: 50px;
+   
+  }
+  .navbar-brand {
+    display: block;
+    /*float: right;*/
+  }
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+header {
+  position: relative;
+  width: 100%;
+
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  background-position: center;
+  background-image: url('../resourses/bg2.jpg');
+  text-align: center;
+  color: var(--bg-color);
+
+}
+
+header .header-content {
+  position: relative;
+  text-align: center;
+  padding: 100px 15px 100px;
+  width: 100%;
+}
+header .header-content .header-content-inner h1 {
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 30px;
+  color: var(--text-color-1);
+}
+header .header-content .header-content-inner hr {
+  margin: 30px auto;
+}
+header .header-content .header-content-inner p {
+  font-weight: 300;
+  color: var(--text-color-2);
+  font-size: 16px;
+  margin-bottom: 50px;
+}
+
+@media (min-width: 768px) {
+  header {
+    min-height: 100%;
+  }
+  header .header-content {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    padding: 0 50px;
+  }
+  header .header-content .header-content-inner {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  header .header-content .header-content-inner h1 {
+    font-size: 50px;
+  }
+  header .header-content .header-content-inner p {
+    font-size: 18px;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/*.navbar-default{
+  background-color: rgba(248, 248, 248, 0.3);
+}*/
+
+
+
+
 
 #mapid{
   height: 300px;

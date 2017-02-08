@@ -4,27 +4,35 @@
   --text-color-2: rgba(106, 120,   8, 1);   
 }
 
+
+
 html, body{
   height: 100%;
   width: 100%;
+  background-color: transparent;
 }
 
+html{
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  background-position: center;
+  background-image: url('../resourses/bg2.jpg');
+  background-attachment: fixed;
 
+}
 .navbar {
   background: transparent;
-  border: none;
   min-height: 40px;
   height: 50px;
+  transition: background .35s;
 }
 
-nav .navbar{
-  margin-bottom: 0;
-  border: none;
-}
+.navbar-default.affix {
+    background-color: white;
+    border-color: rgba(34, 34, 34, 0.05);
+  }
 
-nav #navbar, nav .navbar-header {
-  /*background-color: var(--bg-color);*/
-}
 
 .navbar-brand{
   padding: 0 15px;
@@ -40,6 +48,10 @@ nav #navbar, nav .navbar-header {
 
 }
 
+a{
+  transition: all .35s;
+}
+
 
 
 .phones a{
@@ -53,6 +65,7 @@ nav #navbar, nav .navbar-header {
 
 .contact:first-child{
   margin-left: 0;
+  margin-bottom: 2px;
 }
 
 .phones img{
@@ -64,11 +77,19 @@ nav #navbar, nav .navbar-header {
 }
 
 
+
+
+
+
+
+
 @media screen and (max-width: 768px) {
   .phones{
     /*display: inline-block;*/
     float: left;
     height: 40px;
+    line-height: 16px;
+    padding: 1px 0;
    
   }
   .navbar-brand {
@@ -85,6 +106,7 @@ nav #navbar, nav .navbar-header {
   .navbar{
     background: white;
     height: 40px;
+    border-bottom: 1px solid rgb(221, 221, 221);
   }
 
   .navbar-header{
@@ -97,10 +119,9 @@ nav #navbar, nav .navbar-header {
     padding: 6px 7px;
   }
 
-  .phones{
-    padding: 0;
-  }git
-
+  ul.nav{
+    margin: 0px;
+  }
 
 }
 
@@ -118,11 +139,6 @@ header {
   position: relative;
   width: 100%;
 
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-  background-position: center;
-  background-image: url('../resourses/bg2.jpg');
   text-align: center;
   /*color: var(--bg-color);*/
 
@@ -133,6 +149,7 @@ header .header-content {
   text-align: center;
   padding: 100px 15px 100px;
   width: 100%;
+
 }
 header .header-content .header-content-inner h1 {
   font-weight: 700;
@@ -186,7 +203,9 @@ header .header-content .header-content-inner p {
 
 
 
-
+.table-responsive{
+  border-radius: 5px;
+}
 
 #mapid{
   height: 300px;

@@ -45,7 +45,7 @@ html{
   padding: 5px 0;
   /*margin-right: 15px;*/
   /*background-color: var(--text-color-1);*/
-
+  line-height: 40px;
 }
 
 a{
@@ -62,6 +62,10 @@ a{
   text-decoration: none;
 }
 
+.contact{
+  margin-left: 10px;
+  display: inline-block;
+}
 
 .contact:first-child{
   margin-left: 0;
@@ -82,42 +86,42 @@ a{
 
 
 
-
 @media screen and (max-width: 768px) {
   .phones{
     /*display: inline-block;*/
     float: left;
-    height: 40px;
+/*    height: 40px;
     line-height: 16px;
     padding: 1px 0;
-   
+   */
   }
   .navbar-brand {
     display: block;
     padding-left: 5px;
-    height: 40px;
+    /*height: 40px;*/
     /*float: right;*/
   }
 
-  .navbar-brand img{
-    height: 40px;
-  }
 
   .navbar{
     background: white;
-    height: 40px;
+    /*height: 40px;*/
     border-bottom: 1px solid rgb(221, 221, 221);
+  }
+
+  #navbar{
+    background-color: white;
   }
 
   .navbar-header{
     background-color:  whtie;
-    height: 40px;
+    /*height: 40px;*/
   }
 
-  .navbar-toggle{
+/*  .navbar-toggle{
     margin: 6px 15px 6px 0;
     padding: 6px 7px;
-  }
+  }*/
 
   ul.nav{
     margin: 0px;
@@ -126,6 +130,15 @@ a{
 }
 
 
+@media screen and (max-width: 480px) {
+  .phones{
+    line-height: normal;
+  }
+  .contact{
+    display: block;
+    margin-left: 0;
+  }
+}
 
 
 

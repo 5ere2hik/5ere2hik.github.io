@@ -1,7 +1,11 @@
 :root {
-  --bg-color: rgba(122, 177, 206, 0.8);
-  --text-color-1: rgba( 98,  53, 104, 1);   
-  --text-color-2: rgba(106, 120,   8, 1);   
+  --bg-color: white;/* rgba(122, 177, 206, 0.8);*/
+  --text-color-1: black;/* rgba( 98,  53, 104, 1);   */
+  --text-color-2: black; /*rgba(106, 120,   8, 1);   */
+}
+
+@-moz-document url-prefix() {
+  fieldset { display: table-cell; }
 }
 
 
@@ -80,8 +84,23 @@ a{
   height: 15px;
 }
 
+td:first-child{
+  width: 70%;
+}
+td:last-child{
+  width: 30%;
+  text-align: center;
+}
 
+.table-striped > tbody > tr:nth-of-type(2n+1){
+background-color: var(--bg-color);
+color: var(--text-color-1);
+}
 
+.table-striped > tbody > tr:nth-of-type(2n){
+background-color: var(--text-color-1);
+color: var(--bg-color);
+}
 
 
 
@@ -216,9 +235,7 @@ header .header-content .header-content-inner p {
 
 
 
-.table-responsive{
-  border-radius: 5px;
-}
+
 
 #mapid{
   height: 300px;
